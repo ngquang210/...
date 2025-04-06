@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Vui lên nào</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    #message {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      background-color: #ff69b4;
+      color: white;
+      transition: transform 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    #response {
+      font-size: 20px;
+      margin-top: 30px;
+      color: #c71585;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="message">vui lên rồi à hihi</div>
+
+  <div id="choices">
+    <button class="btn" onclick="respond('khoggg')">khoggg</button>
+    <button class="btn" onclick="respond('droii')">droii</button>
+  </div>
+
+  <div id="response"></div>
+
+  <script>
+    function respond(choice) {
+      const res = document.getElementById('response');
+      if (choice === 'khoggg') {
+        res.textContent = 'oo cậu phải vui lên chứ không được buồn aaaaaaaa chọn droii cho toiiiiii 😤';
+      } else {
+        window.location.href = 'success.html'; // chuyển sang trang khác
+      }
+    }
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Vui vẻ lên!</title>
+  <style>
+    body {
+      background-color: #e0fff4;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding-top: 120px;
+    }
+
+    #message {
+      font-size: 26px;
+      color: #2e8b57;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="message">
+    phải v chứ hh cứ vui vẻ lên không được overthinking, thông thoáng raaaa 😌✨
+  </div>
+
+</body>
+</html>
